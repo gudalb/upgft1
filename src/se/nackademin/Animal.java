@@ -4,7 +4,6 @@ public class Animal {
 
     private String name;
     private int weight;
-    public enum AnimalType {DOG, CAT, SNAKE}
 
 
     public Animal () {};
@@ -13,6 +12,7 @@ public class Animal {
         this.name = name;
         this.weight = weight;
     }
+
 
     public String getName () {
         return name;

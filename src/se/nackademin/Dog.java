@@ -11,4 +11,8 @@ public class Dog extends Animal{
     public AnimalType getType () {
         return type;
     }
+
+    public void Feed () {
+        System.out.println(super.getWeight()/AnimalType.DOG.value + " gram hundfoder till " + super.getName());
+    }
 }
