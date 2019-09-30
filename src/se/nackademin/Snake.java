@@ -1,18 +1,15 @@
 package se.nackademin;
 
-public class Snake extends Animal{
-
-    private AnimalType type = AnimalType.SNAKE;
+public class Snake extends Animal implements IAnimal{
 
     public Snake (String name, int weight) {
         super(name, weight);
+        super.setType(AnimalType.SNAKE);
     }
 
-    public AnimalType getType () {
-        return type;
-    }
-
-    public void Feed () {
-        System.out.println(AnimalType.SNAKE.value + " gram ormpellets till " + super.getName());
+    @Override
+    public void feed() {
+        System.out.println("Mata " + super.getName() + " " +
+                super.getType().foodAmount + " gram " + super.getType().foodName);
     }
 }

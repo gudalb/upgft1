@@ -1,10 +1,10 @@
 package se.nackademin;
 
-public class Animal {
+public class Animal implements IAnimal {
 
     private String name;
     private int weight;
-
+    private AnimalType type;
 
     public Animal () {};
 
@@ -13,6 +13,13 @@ public class Animal {
         this.weight = weight;
     }
 
+    public void setType (AnimalType t) {
+        this.type = t;
+    }
+
+    public AnimalType getType () {
+       return type;
+    }
 
     public String getName () {
         return name;
@@ -29,4 +36,12 @@ public class Animal {
     public void setWeight (int i) {
         this.weight = i;
     }
+
+    public void feed () {
+        System.out.println("Mata " + this.name + " " +
+                (this.weight/type.foodAmount) + " gram " + this.type.foodName);
+
+
+    }
+
 }

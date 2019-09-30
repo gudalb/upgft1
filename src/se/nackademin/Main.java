@@ -1,5 +1,7 @@
 package se.nackademin;
 
+import javax.swing.*;
+
 public class Main {
 
 
@@ -12,11 +14,16 @@ public class Main {
         Cat ove = new Cat("Ove", 3_000);
         Snake hypno = new Snake("Hypno", 1_000);
 
-        sixten.Feed();
-        dogge.Feed();
-        venus.Feed();
-        ove.Feed();
-        hypno.Feed();
+        sixten.feed();
+        dogge.feed();
+        venus.feed();
+        ove.feed();
+        hypno.feed();
+
+        String namn = JOptionPane.showInputDialog("Namn på djur som ska matas: ");
+
+
+
 
 
     }
