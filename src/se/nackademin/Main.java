@@ -6,14 +6,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Cat katt = new Cat("Klas", 4000);
-        Dog hund = new Dog("Peter", 25000);
-        Snake snejk = new Snake("Ida", 500);
+        Dog sixten = new Dog("Sixten", 5_000);
+        Dog dogge = new Dog("Dogge", 10_000);
+        Cat venus = new Cat("Venus", 5_000);
+        Cat ove = new Cat("Ove", 3_000);
+        Snake hypno = new Snake("Hypno", 1_000);
 
+        sixten.Feed();
+        dogge.Feed();
+        venus.Feed();
+        ove.Feed();
+        hypno.Feed();
 
-        katt.Feed();
-        hund.Feed();
-        snejk.Feed();
 
     }
 }
