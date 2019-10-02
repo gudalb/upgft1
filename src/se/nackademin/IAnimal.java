@@ -1,5 +1,6 @@
 package se.nackademin;
 
 public interface IAnimal {
-    public void feed();
+
+    public String feed();
 }

@@ -1,6 +1,6 @@
 package se.nackademin;
 
-public class Animal implements IAnimal {
+public class Animal{
 
     private String name;
     private int weight;
@@ -12,6 +12,7 @@ public class Animal implements IAnimal {
         this.name = name;
         this.weight = weight;
     }
+
 
     public void setType (AnimalType t) {
         this.type = t;
@@ -37,11 +38,8 @@ public class Animal implements IAnimal {
         this.weight = i;
     }
 
-    public void feed () {
-        System.out.println("Mata " + this.name + " " +
-                (this.weight/type.foodAmount) + " gram " + this.type.foodName);
 
-
+    public String feed() {
+        return "Inget djur definerat";
     }
-
 }

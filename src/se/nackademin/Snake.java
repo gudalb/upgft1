@@ -7,9 +7,11 @@ public class Snake extends Animal implements IAnimal{
         super.setType(AnimalType.SNAKE);
     }
 
-    @Override
-    public void feed() {
-        System.out.println("Mata " + super.getName() + " " +
-                super.getType().foodAmount + " gram " + super.getType().foodName);
+    public String feed () {
+        return("Mata " + super.getName() +
+                " 20 gram ormpellets.");
     }
+
+
+
 }
