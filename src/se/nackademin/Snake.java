@@ -12,6 +12,4 @@ public class Snake extends Animal implements IAnimal{
                 " gram ormpellets.");
     }
 
-
-
 }

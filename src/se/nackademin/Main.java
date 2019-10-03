@@ -21,11 +21,6 @@ public class Main {
         djur.add(ove);
         djur.add(hypno);
 
-        // visa djur och mat för test
-//        for (Animal a : djur) {
-//            System.out.println(a.getName() + " " + a.feed());
-//        }
-
 
         String mataDjur = JOptionPane.showInputDialog("Vilket djur vill du mata?");
         boolean found = false;
@@ -41,12 +36,6 @@ public class Main {
 
         if (found == false)
             JOptionPane.showMessageDialog(null, "Djuret hittas ej");
-
-
-
-
-
-
 
 
     }
