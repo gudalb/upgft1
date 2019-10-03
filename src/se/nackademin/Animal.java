@@ -6,7 +6,6 @@ public class Animal{
     private int weight;
     private AnimalType type;
 
-    public Animal () {};
 
     public Animal (String name, int weight) {
         this.name = name;
@@ -37,7 +36,6 @@ public class Animal{
     public void setWeight (int i) {
         this.weight = i;
     }
-
 
     public String feed() {
         return "Inget djur definerat";

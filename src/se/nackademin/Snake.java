@@ -8,8 +8,8 @@ public class Snake extends Animal implements IAnimal{
     }
 
     public String feed () {
-        return("Mata " + super.getName() +
-                " 20 gram ormpellets.");
+        return("Mata " + super.getName() + " " + super.getType().foodAmount +
+                " gram ormpellets.");
     }
 
 

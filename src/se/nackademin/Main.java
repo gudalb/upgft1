@@ -22,15 +22,14 @@ public class Main {
         djur.add(hypno);
 
         // visa djur och mat för test
-        for (Animal a : djur) {
-            System.out.println(a.getName() + " " + a.feed());
-        }
+//        for (Animal a : djur) {
+//            System.out.println(a.getName() + " " + a.feed());
+//        }
 
 
         String mataDjur = JOptionPane.showInputDialog("Vilket djur vill du mata?");
         boolean found = false;
 
-        //todo fixa, feed måste gå igenom subklass
         for (Animal a : djur) {
             if (a.getName().equalsIgnoreCase(mataDjur)) {
                 JOptionPane.showMessageDialog(null, a.feed());
